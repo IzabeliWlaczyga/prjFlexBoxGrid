@@ -1,0 +1,45 @@
+:root{
+    --dark:#343a45;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--dark);
+}
+
+header{
+    background-color: var(--dark);
+}
+
+.logo{
+    color: #fff;
+}
+
+.logo h1{
+    font-size: 18px;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+
+}
+
+.menu a:hover{
+    background-color: #2d2d2e;
+    border-radius: 5px;
+}
+
+.menu li{
+    display: inline;
+}
+
+.nav{
+    display: flex;
+}
