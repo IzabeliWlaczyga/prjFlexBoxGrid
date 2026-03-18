@@ -68,3 +68,42 @@ header{
 .menu ul{
     text-align: center;
 }
+
+/*Banner*/
+.banner{
+    background: url('./img/hero-bg.png') center / cover fixed;
+    display: flex;
+}
+
+.banner>div{
+    width: 50%;
+    padding: 40px 20px 20px 20px;
+} 
+
+.banner img{
+    width: 80%;
+}
+
+.btn{
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn-green{
+    background-color: #014b14;
+}
+
+.btn-blue{
+    background-color: #11014f;
+}
+
+.banner-buttons{
+    margin-top: 32px;
+}
+
+.banner p, .banner h2{
+    padding: 10px;
+}
