@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Projeto Flexbox e Grid</title>
 </head>
+
 <body>
+    <input type="checkbox" id="menu-toggle">
     <header>
         <nav class="nav">
             <div class="logo grow1">
-                <a href="index.html">
-                    <img src="img/logo.png" title="logo">
-                </a>
+                <a href="index.html"><img src="img/logo.png" alt="Logo" title="Logo"></a>
+                <!-- <h1>Flexbox Grid</h1> -->
             </div>
+            <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
             <div class="menu grow2">
+                <!-- menu principal -->
                 <ul>
-                    <li> <a href="#">Galeria</a> </li>
-                    <li> <a href="#">Serviços</a> </li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Serviços</a></li>
                     <li><a href="#">Depoimentos</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
+
             </div>
             <div class="menu grow1">
                 <ul>
-                    <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -34,78 +40,122 @@
 
     <section class="banner">
         <div>
-            <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
-            <img src="img/undraw_stripe_payments_re_chlm.svg" alt="Banner" title="Banner">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos illo aut voluptate pariatur aliquam 
-                aspernatur tempora consequatur omnis totam facilis.</p>
+            <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit</h2>
+            <img src="img/undraw_stripe_payments_re_chlm.svg" alt="Banner" title="Título do banner">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur magni rem ipsam quam deserunt esse
+                totam dicta consequatur ipsum voluptates, aliquid consectetur dolorum officiis ut natus nihil sapiente,
+                quae maxime.</p>
         </div>
         <div>
-            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ducimus.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, accusamus?</p>
-            <div class="banner-buttons"> 
-                <a href="#" class="btn btn-green">Portifólio</a>
+            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eos unde, cum expedita accusantium
+                sunt, similique dolor odio dolores, voluptatibus iste quae eaque quaerat tempore molestias itaque quis
+                tempora rem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eos unde, cum expedita accusantium
+                sunt, similique dolor odio dolores, voluptatibus iste quae eaque quaerat tempore molestias itaque quis
+                tempora rem?</p>
+
+            <div class="banner-buttons">
+                <a href="#" class="btn btn-green">Portfolio</a>
                 <a href="#" class="btn btn-blue">Saiba mais</a>
             </div>
+
         </div>
     </section>
 
     <main>
+        <!-- seção da galeria de imagens -->
         <section>
             <h1>Galeria de Imagens</h1>
             <section class="card-gallery">
-                <article class="w-2 h-2">
+                <article class="h-2 w-2">
+                    <!-- imagem -->
                     <img src="img/2841901.jpg" alt="">
+                    <div>
+                        <a href="#" class="btn">Salvar</a>
+                        <a href="#" class="btn"><i class="fa-solid fa-heart"></i></a>
+                    </div>
                     <h1>Título do artigo 1</h1>
                 </article>
+
                 <article class="w-2 h-1">
                     <img src="img/2846378.jpg" alt="">
                     <h1>Título do artigo 2</h1>
                 </article>
+
                 <article class="w-2 h-2">
                     <h2>Lorem Ipsum</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim nobis rem distinctio ratione deserunt explicabo a aperiam consequatur natus ipsum! Reiciendis a, perferendis odio illo sunt itaque provident officia deserunt.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim nobis rem distinctio ratione deserunt explicabo a aperiam consequatur natus ipsum! Reiciendis a, perferendis odio illo sunt itaque provident officia deserunt.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores necessitatibus
+                        distinctio id, sapiente voluptates, fugit voluptate nam ad officiis nemo, iste quos praesentium.
+                        Exercitationem rem quas consequatur ab veritatis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores necessitatibus
+                        distinctio id, sapiente voluptates, fugit voluptate nam ad officiis nemo, iste quos praesentium.
+                        Exercitationem rem quas consequatur ab veritatis.</p>
                 </article>
                 <article class="w-2 h-1">
                     <img src="img/4025565.jpg" alt="">
                     <h1>Título do artigo 4</h1>
                 </article>
-                <article class="w-2 h-2">
-                     <img src="img/4025565.jpg" alt="">
+
+                <article class="w-2 h-2 ">
+                    <p class="text-gallery">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure distinctio,
+                        fugit ipsa sequi minus debitis voluptates nostrum beatae. Dignissimos accusamus est quaerat enim
+                        fugit magni voluptatibus, quam laboriosam minima autem!</p>
+                    <img src="img/4025565.jpg" alt="">
                     <h1>Título do artigo 5</h1>
                 </article>
+
                 <article class="w-1 h-1">
-                     <img src="img/2846378.jpg" alt="">
+                    <img src="img/2846378.jpg" alt="">
                     <h1>Título do artigo 6</h1>
                 </article>
+
                 <article class="w-1 h-1">
                     <img src="img/2841901.jpg" alt="">
                     <h1>Título do artigo 7</h1>
                 </article>
+
                 <article class="w-2 h-1">
-                    <h2>Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatibus velit aperiam obcaecati, error recusandae quidem amet, aliquam neque assumenda reiciendis maxime officia eaque iusto cumque culpa illo repellat numquam.</p>
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quas cumque cupiditate incidunt
+                        eos impedit minima blanditiis commodi illum tenetur, corporis nam ab saepe totam quasi
+                        necessitatibus fuga illo fugit!</p>
                 </article>
-                 <article class="w-4 h-1">
-                    <h2>Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo deleniti eius corporis voluptas, quo mollitia earum neque aperiam libero ipsam nihil illum quia numquam eligendi dolore exercitationem quod, porro itaque.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo deleniti eius corporis voluptas, quo mollitia earum neque aperiam libero ipsam nihil illum quia numquam eligendi dolore exercitationem quod, porro itaque.</p>
+
+                <article class="w-4 h-1">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nesciunt ut, fuga explicabo odio,
+                        itaque fugit tenetur eveniet ex excepturi molestias! Reiciendis optio impedit beatae quis ex
+                        explicabo totam odio.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nesciunt ut, fuga explicabo odio,
+                        itaque fugit tenetur eveniet ex excepturi molestias! Reiciendis optio impedit beatae quis ex
+                        explicabo totam odio.</p>
                 </article>
             </section>
         </section>
-
+        <!-- seção de serviços -->
         <section>
             <h1>Serviços</h1>
+            <section>
+                <!-- aqui será desenvolvida a seção de serviços -->
+            </section>
         </section>
 
+        <!-- seção dos depoimentos -->
         <section>
             <h1>Depoimentos</h1>
+            <section>
+                <!-- aqui será desenvolvida a seção de depoimentos -->
+            </section>
         </section>
     </main>
 
     <footer>
-
+        <!-- aqui será desenvolvido o rodapé -->
     </footer>
+
+
 </body>
+
+
 </html>

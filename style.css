@@ -1,10 +1,12 @@
+
 *{
     margin: 0;
     padding: 0;
+
 }
 
 :root{
-    --dark:#343a45;
+    --dark:#343a45; 
 }
 
 body{
@@ -18,7 +20,6 @@ header{
 
 .logo{
     color: #fff;
-    text-align: left;
 }
 
 .logo h1{
@@ -32,26 +33,31 @@ header{
 }
 
 .menu a{
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 10px;
+   color: #fff;
+   text-decoration: none;
+   padding:10px 20px;
+   /* border: solid 1px #f00; */
 
 }
-
-.menu a:hover{
-    background-color: #2d2d2e;
-    border-radius: 5px;
-}
-
 .menu li{
     display: inline;
+}
+.menu a:hover{
+    background-color: #555757;
+    border-radius: 5px;
 }
 
 .nav{
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
+
+/* .nav div{
+    border: solid 2px #f00;
+} */
+
 
 .grow1{
     flex-grow: 1;
@@ -61,24 +67,22 @@ header{
     flex-grow: 2;
 }
 
-.nav div{
-    border: solid 2px #f00;
-}
-
 .menu ul{
     text-align: center;
 }
 
-/*Banner*/
+/* banner */
+
 .banner{
-    background: url('./img/hero-bg.png') center / cover fixed;
+    background: url('../img/hero-bg.png') center / cover fixed;
     display: flex;
 }
 
 .banner>div{
-    width: 50%;
     padding: 40px 20px 20px 20px;
-} 
+    width: 50%;
+    /* border: #f00 solid 1px; */
+}
 
 .banner img{
     width: 80%;
@@ -86,10 +90,11 @@ header{
 
 .btn{
     text-transform: uppercase;
+    /* border: solid #f00 2px; */
     padding: 10px 20px;
     text-decoration: none;
-    color: #fff;
     border-radius: 5px;
+    color: #fff;
 }
 
 .btn-green{
@@ -99,7 +104,6 @@ header{
 .btn-blue{
     background-color: #11014f;
 }
-
 .banner-buttons{
     margin-top: 32px;
 }
@@ -108,16 +112,18 @@ header{
     padding: 10px;
 }
 
-/* Galeria */
+/* css da galeria de imagens */
 
 .card-gallery article{
-    border: solid 1px #f00;
-    position: relative;
+   /* border: solid 1px #f00; */
+   position: relative;
+   background-color: var(--dark);
+   border-radius: 10px;
 }
 
 .card-gallery{
     display: grid;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 300px;
     gap: 5px;
 }
@@ -126,7 +132,7 @@ header{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
+      border-radius: 10px;
 }
 
 .h-1{
@@ -141,19 +147,72 @@ header{
     grid-column: span 1;
 }
 
+
 .w-2{
     grid-column: span 2;
 }
+
 
 .w-4{
     grid-column: span 4;
 }
 
+
 .card-gallery h1{
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgba(255, 255, 555, .8);
-    font-size: 32px;
+    background-color: rgba(255, 255, 255, .8);
+    font-size: 24px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    text-align: center;
+    /* border: solid 1px #f00; */
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card-gallery h2, .card-gallery p{
+    color: #fff;
+    padding: 16px;
+    line-height: 24px;
+    /* z-index: 999; */
+}
+
+.card-gallery .text-gallery{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:var(--dark);
+    z-index:3;
+}
+
+/* efeito hover no h1 do article */
+.card-gallery article:hover h1{
+    opacity: 1;
+}
+
+.card-gallery .btn{
+    background-color: #01180c;
+    color: #fff;
+    border:none;
+}
+
+.card-gallery article>div{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin: 20px;
+    opacity: 0;
+    transition: 0.3s;
+
+}
+
+.card-gallery article:hover>div{
+    opacity: 1;
+}
+
+.card-gallery article:hover img{
+    filter: brightness(70%) ;
 }
 
